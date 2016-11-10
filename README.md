@@ -21,4 +21,8 @@ Very basic example of apache kafka producer &amp; consumer using java api of kaf
  - Create a simple topic using command `bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 
 --partitions 1 --topic topic-name`
  - Now run the class `SimpleProducer.java`  while passing this topic name in arugments.
- - Then run the class `SimpleConsumer.java` passing the same topic name to consume the messages pushed by the `SimpleProducer` class.   
+ - Then run the class `SimpleConsumer.java` passing the same topic name to consume the messages pushed by the `SimpleProducer` class.
+ 
+**PS:** before running the kafka broker create the **config/server.properties** file with the following broker conf:
+   
+![Conf](config.JPG)
